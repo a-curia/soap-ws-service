@@ -3,6 +3,8 @@ package com.dbbyte.business;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.dbbyte.models.Product;
+
 public class ProductServiceImpl {
 
 	List<String> bookList = new ArrayList<>();
@@ -61,6 +63,15 @@ public class ProductServiceImpl {
 		}
 
 		return true;
+	}
+
+	public List<Product> getProductsV2(String category) {
+		
+		List<Product> productList = new ArrayList<>();
+		productList.add(new Product("a book 1", "12356", 25.36));
+		productList.add(new Product("a book 2", "5435", 89.36));
+		
+		return productList;
 	}
 
 }
