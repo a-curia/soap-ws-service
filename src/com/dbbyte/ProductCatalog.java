@@ -9,10 +9,8 @@ import com.dbbyte.business.ProductServiceImpl;
 import com.dbbyte.models.Product;
 
 
-//@WebService(name="TestMartCatalog",portName="TestMartCatalogPort",serviceName="TestMartCatalogService",
-//targetNamespace="http://www.testmart.com")
-
-@WebService(endpointInterface="com.dbbyte.ProductCatalogInterface") // only annotatin required in implementation
+@WebService(name="TestMartCatalog",portName="TestMartCatalogPort",serviceName="TestMartCatalogService",
+targetNamespace="http://www.testmart.com", endpointInterface="com.dbbyte.ProductCatalogInterface") // only annotatin required in implementation
 public class ProductCatalog implements ProductCatalogInterface {
 
 	ProductServiceImpl service = new ProductServiceImpl();
