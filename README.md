@@ -31,7 +31,35 @@ Handling Faults
 
 
 SoapUI
-- eclipse plugin and how to use it
+- Community SoapUI
+- learn about the Web Service Explorer tool that come with Eclipse to test and examine web services
+
+Using Endpoint
+- there is an alternative way of publishing and running web services without having to use any app servers 
+- we'll use the Endpoint class to publish our web service
+- javax.xml.ws.Endpoint; metro reference is present in jdk
+
+WSIMPORT
+wsimport [options] <WSDL URL>
+wsimport -d <directory> : where you want the generated classes to go
+wsimport -keep : let's you keep the source files(*.java)
+wsimport -s <directory> : where you want source java files to be saved
+wsimport -verbose
+wsimport -quiet
+wsimport -p <package_name> : specific package
+
+Web Service -> WSDL -> Stubs
+WSDL Type Names -> Java class Names
+Binding files - custom xml files used for overriding different... configure specific types.. binding-file.xml
+wsimport -b binding_file.xml wsdl
+         -p
+ 
+
+
+
+
+
+
 
 
 
